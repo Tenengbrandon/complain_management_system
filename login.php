@@ -52,11 +52,11 @@
                   <span <i class="uil uil-user-circle"></i></span>
                   <h3>Profile</h3>
               </a>
-              <a href="./index.php">
+              <a href="#">
                   <span <i class="uil uil-apps"></i></span>
                   <h3>Dashboard</h3>
               </a>
-              <a href="index.php">
+              <a href="index.html">
                   <span <i class="uil uil-home"></i></span>
                   <h3>Home</h3>
               </a>
@@ -123,3 +123,18 @@
  <script src="login.html"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

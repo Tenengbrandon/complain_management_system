@@ -41,16 +41,12 @@
         <aside>
             <!-------------begin of aside-------->
             <div class="top">
-                <div class="search-box">
-                    <img src="./images/search.png">
-                    <input type="text" placeholder="search">
-                </div>
                 <div class="close" id="close-btn">
                     <span <i class="uil uil-times"></i></span>       
                 </div>
             </div>
             <div class="sidebar">
-                <a href="#">
+                <a href="profile.php">
                     <span <i class="uil uil-user-circle"></i></span>
                     <h3>Profile</h3>
                 </a>
@@ -61,6 +57,14 @@
                 <a href="index.php">
                     <span <i class="uil uil-home"></i></span>
                     <h3>Home</h3>
+                </a>
+                <a href="#">
+                    <span <i class="uil uil-history"></i></span>
+                    <h3>Complain-history</h3>
+                </a>
+                <a href="#">
+                    <span <i class="uil uil-key-skeleton-alt"></i></span>
+                    <h3>Change-password</h3>
                 </a>
                 <a href="#">
                     <span <i class="uil uil-phone"></i></span>
@@ -95,12 +99,17 @@
                     <button><a href="./login.html">Login</a></button>
                     <button><a href="./signup.html">Sign Up</a></button>
                 </div>
+                <h6 class="title">Our Expert Staff Members</h6>
             </div>
-            <h1 class="title">Our Expert Staff Members</h1>
+            
+            </div>
+            
         <section>
-            <div class="container">   <!-----------image slider-------->
+            <div class="container-1">   
+                
                 <div class="content">
-                    <div class="card">
+                    
+                    <div class="card">      <!-----------image slider-------->
                         <div class="card-content">
                             <div class="image">
                                 <img src="images/image1.jfif">
