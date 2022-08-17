@@ -1,0 +1,291 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    text-decoration: none;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: rgb(63, 161, 161);
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+
+.navbar {
+    background: navy;
+    color: white;
+    padding: 0.3rem 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+  }
+  
+  .brand-1 {
+    color: black;
+  }
+  
+  .brand-2 {
+    color: blue;
+  }
+  
+  .navbar-brand img,
+  .nav-right img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand .title {
+    margin-left: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon {
+    color: black;
+    text-decoration: none;
+    background: white;
+    margin-right: 2rem;
+    font-size: 10px;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 50%;
+  }
+  
+  .icon:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  #navbar .fa-whatsapp {
+    color: green;
+    font-size: 25px;
+  }
+  
+  .fa-envelope {
+    margin-left: 2px;
+  }
+  
+  .whatsapp {
+    padding-top: 1.2rem;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right input {
+    margin-right: 1rem;
+    height: 30px;
+    width: 200px;
+    padding: 0 30px;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .nav-right input:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .search {
+    position: relative;
+  }
+  
+  .nav-right .search-icon {
+    position: absolute;
+    left: 10px;
+    color: black;
+    top: 7px;
+    color: gray;
+  }
+  
+  .bar-icon {
+    font-size: 20px;
+    color: white;
+    display: none;
+  }
+
+  .registration{
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    height: 1250px;
+    margin-top: 10rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
+    overflow: hidden;
+  }
+
+  /* .registration .forms{
+    width: 200%;
+    background-color: red;
+    display: flex;
+    height: 440px;
+    align-items: center;
+    transition: height 0.2  ease;
+  } */
+
+  .registration .form{
+    padding: 30px;
+    background-color: #fff;
+    width: 50%;
+  }
+
+  
+
+  .registration .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+  }
+
+  .form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-radius: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;
+  }
+
+  .input-field i{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: rgba(153, 153, 153, 0.866);
+    font-size: 23px;
+  }
+
+  .input-field input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+  }
+
+  /* .input-field i .icon{
+    left: 0;
+    font-size: 2px;
+  }
+
+  .input-field i .showHidePw{
+    right: 0;
+    font-size: 2px;
+  } */
+
+  .form .checkbox-text{
+    display: flex;
+    align-self: center;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+
+  .checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #4070f4;
+  }
+
+  .form .text{
+    color: #333;
+    font-size: 14px;
+  }
+
+  .form a.text{
+    text-decoration: none;
+    color: #4070f4;
+  }
+
+  .form a:hover{
+    text-decoration: underline;
+  }
+
+  .form .button{
+    margin-top: 30px;
+  }
+
+  .form .button input{ 
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 7px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .form .button input:hover{
+    background-color: #265df2;
+  }
+
+  .form .login-signup{
+    margin-top: 28px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

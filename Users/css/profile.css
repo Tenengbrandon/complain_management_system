@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    text-decoration: none;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background: rgba(202, 198, 198, 0.774);
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    background: navy;
+    color: white;
+    padding: 0.3rem 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+  }
+  
+  .brand-1 {
+    color: black;
+  }
+  
+  .brand-2 {
+    color: blue;
+  }
+  
+  .navbar-brand img,
+  .nav-right img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand .title {
+    margin-left: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon {
+    color: black;
+    text-decoration: none;
+    background: white;
+    margin-right: 2rem;
+    font-size: 10px;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 50%;
+  }
+  
+  .icon:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  #navbar .fa-whatsapp {
+    color: green;
+    font-size: 25px;
+  }
+  
+  .fa-envelope {
+    margin-left: 2px;
+  }
+  
+  .whatsapp {
+    padding-top: 1.2rem;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right input {
+    margin-right: 1rem;
+    height: 30px;
+    width: 200px;
+    padding: 0 30px;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .nav-right input:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .search {
+    position: relative;
+  }
+  
+  .nav-right .search-icon {
+    position: absolute;
+    left: 10px;
+    color: black;
+    top: 7px;
+    color: gray;
+  }
+  
+  .bar-icon {
+    font-size: 20px;
+    color: white;
+    display: none;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sidebar {
+    width: 25%;
+    height: 100vh;
+    margin: 0 !important;
+    background: white;
+    display: flex;
+    align-items: center;
+    margin-top: 0.1rem;
+    line-height: 20px;
+    position: fixed;
+    box-shadow: inset -1px -1px rgba(235, 224, 224, 0.5);
+  }
+  
+  #main {
+    width: 100%;
+    margin-left: 19rem;
+  }
+  
+  .sidebar a {
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #363949;
+    text-decoration: none;
+    gap: 0.5rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    transition: all 300ms ease;
+  }
+  
+  .sidebar a:hover {
+    color: black;
+    transform: translateX(10px);
+  }
+
+  aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+  
+.first {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.first a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 3.5rem;
+}
+
+.first .fas fa-user-circle{
+    font-size: 3rem;
+}
+
+.first h1{
+    font-size: 40px;
+}
+
+section .row-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.inner-box .upload{
+    width: 200px;
+    position: relative;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.upload img{
+    border: 6px solid #eaeaea;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.upload .round , .round .fa fa-camera{
+    position: relative;
+    background: #0084ff;
+    line-height: 33px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 10rem;
+    right: 0;
+    bottom: 45px;
+}
+
+.upload .round input[type="file"]{
+    position: absolute;
+    transition: scale(2);
+    opacity: 0;
+}
+
+input[type="file"]::-webkit-file-upload-button{
+    cursor: pointer;
+}
+
+section .inner-box{
+    display: flex;
+    width: 70%;
+    margin-left: 18rem;
+    padding: 13px;
+}
+
+.input-field{
+    margin-left: 0.5rem;
+    width: 65rem;
+    height: 85vh;
+}
+
+input[type="submit"]{
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(30, 190, 184);
+}
+
+input[type="text"],input[type="password"],input[type="submit"],input[type="name"],input[type="date"],input[type="email"],input[type="contact"]{
+    width: 360px;
+    padding: 10px;
+    font-size: 17px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 50px;
+}
+
+input[type="text"]{
+    margin-right: 2rem;
+}
+
+input{
+    color: black;
+    border: 1px solid wheat;
+}
+
+button{
+    padding: 10px;
+    outline: 1;
+    width: 20%;
+    cursor: pointer;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: skyblue;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+  
+  #footer {
+    margin-top: 5rem;
+    background-color: rgba(196, 183, 183, 0.733);
+    padding-top: 1rem;
+    margin-left: 1rem;
+  }
+  
+  #footer h4 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 0.5rem;
+  }
+
+  #footer .row{
+    justify-content: space-between;
+  }
+  
+  #footer a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.6rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer a:hover {
+    color: grey;
+  }
+  
+  #footer a span {
+    margin-left: 0.5rem;
+  }
+  
+  #footer li {
+    list-style: none;
+  }
+  
+  #footer .fa-square {
+    font-size: 8px;
+  }
+  
+  .footer-close {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  
+  .footer-close span {
+    color: blue;
+  }
+  
+  /* Media queries--------responsivness----------- */
+  @media screen and (min-width: 992px) {
+    .icon {
+      margin-right: 70px;
+    }
+  
+    .nav-menu {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .sidebar {
+      display: none;
+    }
+  
+    #main {
+      width: 100vw;
+
+    }
+  
+    .title {
+      font-size: 17px;
+    }
+  
+    .main-desc {
+      font-size: 13px !important;
+    }
+  
+    .main-buttons {
+      margin-top: -20px;
+    }
+  
+    #our-staff .row {
+      display: block;
+    }
+  
+    .fr-3 {
+      width: 100%;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .fr-4 {
+      width: 50%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .nav-icons,
+    .nav-right {
+      display: none;
+    }
+  
+    .bar-icon {
+      margin-right: 1rem;
+      float: right;
+      display: block;
+    }
+  
+    #navbar.responsive {
+      position: relative;
+    }
+  
+    #navbar.responsive .bar-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .nav-menu {
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+  
+    .nav-menu a {
+      font-size: 10px;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      font-weight: normal;
+      margin-top: 1rem;
+      align-items: center;
+    }
+  
+    .nav-menu a h3 {
+      margin-left: 0.3rem;
+    }
+  
+    .d-none {
+      display: none !important;
+    }
+  }
+  
