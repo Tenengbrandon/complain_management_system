@@ -1,13 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 
-body{
-    background-image: url(../images/password.webp);
-    height: 150vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+*{
+margin: 0;
+padding: 0;
+outline: 0;
+appearance: none;
+text-decoration: none;
+border: 0;
+box-sizing: border-box;
+background: var(rgb(207, 30, 30));
 }
 
+html{
+    font-size: 14px;
+    /* background: var(rgb(207, 30, 30)); */
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    /* background: var(rgb(207, 30, 30)); */
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.slider{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 20s infinite;
+}
+
+.load{
+    animation: slide 10s;
+    width: 100%;
+}
+
+@keyframes slide {
+    0%{
+        background-image: url(../images/background1.webp);
+    }
+    20%{
+        background-image: url(../images/background1.webp);
+    }
+    20.01%{
+        background-image: url(../images/background2.jfif);
+    }
+    40%{
+        background-image: url(../images/background2.jfif);
+    }
+    40.01%{
+        background-image: url(../images/background3.jfif);
+    }
+    60%{
+        background-image: url(../images/background3.jfif);
+    }
+    60.01%{
+        background-image: url(../images/background4.jfif);
+    }
+    80%{
+        background-image: url(../images/background4.jfif);
+    }
+    80.01%{
+        background-image: url(../images/background5.jfif);
+    }
+    100%{
+        background-image: url(../images/background5.jfif);
+    }
+}
 
 .container{
     display: grid;
@@ -19,14 +84,15 @@ body{
 /*------------- begin of nav-------------*/
 nav{
     display: flex;
-    /* position: fixed; */
+    position: fixed;
+    z-index: 1;
     align-items: center;
     justify-content: space-between;
     height: 60px;
     width: 100%;
     padding: 5px 5px;
     border-radius: 10px;
-    background: #a0b1c6;
+    background: navy;
 }
 
 .nav-left , .nav-right{
@@ -130,7 +196,7 @@ b{
 /*------------- --------begin of aside----------------------*/
 aside{
     height: 100vh;
-    /* position: fixed; */
+    position: fixed;
     /* width: 14rem; */
 }
 
@@ -142,27 +208,10 @@ aside .top{
     margin-top: 1.4rem;
 }
 
-
-.top .search-box{
-    background: #efefef;
-    width: 150px;
-    margin-top: 20px;
-    border-radius: 20px;
-    display: flex;
-    padding: 0 15px;
-    align-items: center;
-}
-
-.top .search-box img{
-    width: 20px;
-    border-radius: 50%;
-}
-.top .search-box input{
-    background: transparent;
-    width: 100%;
-    padding: 10px;
-    outline: none;
-    border: 0;
+.container .sidebar{
+    /* background-color: #7380ec; */
+    border-radius: 8px;
+    width: 20rem;
 }
 
 aside .close{
@@ -237,144 +286,81 @@ aside .sidebar a:hover span{
 /*---------------------------- end of aside---------------------------*/
 
 
-.registration{
-    width: 350px;
-    padding: 10% 0 0;
-    margin: auto;
+/*------------- begin of first (main section)--------------------*/
+
+.main-secton{
+    /* margin-top: 3rem;
+    gap: 0.87rem; */
+    justify-content: center;
+    text-align: center;
+    /* height: 100vh; */
 }
 
-.forms{
+.main-secton .contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), #7180b8), url(../images/password.webp); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100rem;
+    margin-left: 19rem;
+    margin-top: 4rem;
+    height: 100vh;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+form{
+    max-width: 600px;
+    width: 90%;
+}
+
+.input-group{
+    margin-bottom: 20px;
+    margin-right: 15rem;
     position: relative;
-    z-index: 1;
-     background: rgba(0, 0, 0, 0.5);
-     box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    max-width: 300px;
 }
 
-
-.forms input{
-     background-color: rgba(0, 0, 0, 0.5);
-     box-shadow: inset -1px -1px rgba(0, 0, 0, 0.5); 
-    text-align: center;
-    outline: none;
+input, textarea{
     width: 100%;
-    margin: 0 0 12px;
-    padding:10px;
-    box-sizing: border-box;
-    color: rgb(242, 242, 242);
-    border-radius: 20px;
-    font-size: 12px;
-    padding-right: 50px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 11px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
 }
 
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    padding: 13px;
+    color: #fff;
+    cursor: text;
+    transition: 0.5s;
+}
 
 button{
-    padding: 15px;
-    outline: 1;
-    width: 100%;
+    padding: 10px 0;
+    margin-right: 17.65rem;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 390px;
     cursor: pointer;
-    text-transform: uppercase;
-    background-color: rgba(255, 0, 0, 0.625);
-    margin: 0 0 12px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    font-size: 15px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
 }
 
-.forms h2{
-    text-align: center;
-    font-size: 25px;
-    color: white;
-    padding: 0 0 30px 0;
+.contact h1{
+    margin-right: 4rem;
+    margin-bottom: 37rem;
 }
-
-.forms p{
-    padding: 10px;
-    text-align: center;
-    color: white;
-    font-size: 16px;
-}
-
-.forms p a{
-    color: white;
-    font-size: 16px;
-}
-
-.registration .forms .assist{
-    display: flex;
-}
-
-.registration .forms .assist p{
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-}
-
-.footer{
-    float: left;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer ul{
-    display: flex;
-}
-
-
-.footer ul li{
-    margin-left: 60px;
-    margin-top: 20px;
-    list-style: none;
-    margin-bottom: 100px;
-    font-size: 16px;
-    margin-right: 15px;
-    
-}
-
-/* responsive styling */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

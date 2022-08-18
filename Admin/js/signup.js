@@ -1,5 +1,11 @@
+//input fields
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const email = document.getElementById("email");
+const phoneNumber = document.getElementById("phoneNumber");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
+const confirmPassword = document.getElementById("confirmPassword");
 
 //form
 const form = document.getElementById("myForms");
@@ -9,13 +15,17 @@ const form = document.getElementById("myForms");
 const green = "#4CAF50";
 const red = "#F44336";
 
-
 form.addEventListener('submit', function(event){
     event.preventDefault();
-    if(
+    if (
+        validateFirstName() &&
+        validateLastName() &&
+        validatePhoneNumber() &&
+        validateEmail() &&
         validateUsername() &&
-        validatePassword()
-    ){
+        validatePassword() &&
+        validateConfirmPassword()
+    ) {
         const name = firstName.value;
         const container = document.querySelector('div.container');
         const loader = document.createElement('div');
@@ -36,6 +46,18 @@ form.addEventListener('submit', function(event){
     }
 });
 
+// function validators
+function validateFirstName(){
+    if(checkIfEmpty(firstName)) return;            //checking if the field is empty
+    if(!checkIfOnlyLetters(firstName)) return;      //checking if the field contains only letters
+    return true;
+}
+
+function validateLastName(){
+    if(checkIfEmpty(lastName)) return;            //checking if the field is empty
+    if(!checkIfOnlyLetters(lastName)) return;      //checking if the field contains only letters
+    return true;
+}
 
 function validatePassword(){
     if(checkIfEmpty(password)) return;            //checking if the field is empty
@@ -45,13 +67,39 @@ function validatePassword(){
     return true; 
 }
 
-function validateUsername(){
-    if(checkIfEmpty(username)) return;
-    if(!containsCharacters(username, 4)) return;
+function validateConfirmPassword(){
+    if(password.className !== "valid"){
+        setInvalid(confirmPassword, "password must be valid");
+        return;
+    }
+    //if they both match
+    if(password.value !== confirmPassword.value){
+        setInvalid(confirmPassword, "password must match");
+        return;
+    } 
+    else{
+        setValid(confirmPassword);
+    }
     return true;
 }
 
+function validateEmail(){
+    if(checkIfEmpty(email)) return;
+    if(!containsCharacters(email, 5)) return;
+    return true;
+}
 
+function validateUsername(){
+    if(checkIfEmpty(username)) return;
+    //if(!containsCharacters(username, 4)) return;
+    return true;
+}
+
+function validatePhoneNumber(){
+    if(checkIfEmpty(phoneNumber)) return;
+    //if(!containsCharacters(phoneNumber, 6)) return;
+    return true;
+}
 
 
 //utility function
@@ -121,10 +169,16 @@ function containsCharacters(field, code){
         case 3:
             regEx = /[a-zA-Z]+/g;
             return matchWithRegEx(regEx, field, "must contain a lowercase and uppercase letter and numbers");
-        case 4:
-            regEx = /\s/g;
-            return matchWithRegEx(regEx, field, "must not contain any space");
-        
+        //case 4:
+           // regEx = /\s/g;
+            //return matchWithRegEx(regEx, field, "must not contain any space");
+        case 5:
+            regEx = /^(([^<>()\[\]\\.,;:\$@"]+(\.[^<>()\[\]\\.,;:\$@"]+)*)|(".+"))@((\[[0-9]{1,3}\.{0-9}{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return matchWithRegEx(regEx, field, "must be a valid email adress"); 
+        //case 6:
+           // regEx = /[[:ascii:]]+/g;
+            //return matchWithRegEx(regEx, field, "must contain only digits");
+
         default:
             return false;
               
@@ -143,6 +197,6 @@ function matchWithRegEx(regEx, field, massage){
     else{
         setInvalid(field, massage)
             return false;
-        
     }
 }
+

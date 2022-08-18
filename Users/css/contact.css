@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    text-decoration: none;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background: rgba(202, 198, 198, 0.774);
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    background: navy;
+    color: white;
+    padding: 0.3rem 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+  }
+  
+  .brand-1 {
+    color: black;
+  }
+  
+  .brand-2 {
+    color: blue;
+  }
+  
+  .navbar-brand img,
+  .nav-right img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand .title {
+    margin-left: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon {
+    color: black;
+    text-decoration: none;
+    background: white;
+    margin-right: 2rem;
+    font-size: 10px;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 50%;
+  }
+  
+  .icon:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  #navbar .fa-whatsapp {
+    color: green;
+    font-size: 25px;
+  }
+  
+  .fa-envelope {
+    margin-left: 2px;
+  }
+  
+  .whatsapp {
+    padding-top: 1.2rem;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right input {
+    margin-right: 1rem;
+    height: 30px;
+    width: 200px;
+    padding: 0 30px;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .nav-right input:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .search {
+    position: relative;
+  }
+  
+  .nav-right .search-icon {
+    position: absolute;
+    left: 10px;
+    color: black;
+    top: 7px;
+    color: gray;
+  }
+  
+  .bar-icon {
+    font-size: 20px;
+    color: white;
+    display: none;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sidebar {
+    width: 25%;
+    height: 100vh;
+    margin: 0 !important;
+    background: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    box-shadow: inset -1px -1px rgba(235, 224, 224, 0.5);
+  }
+  
+  #main {
+    width: 100%;
+    margin-left: 19rem;
+  }
+  
+  .sidebar a {
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #363949;
+    text-decoration: none;
+    gap: 0.5rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    transition: all 300ms ease;
+  }
+  
+  .sidebar a:hover {
+    color: black;
+    transform: translateX(10px);
+  }
+
+  aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+  }
+    
+    .inside-main .contact{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), #7180b8), url(../images/password.webp); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100rem;
+        margin-left: 4rem;
+        margin-top: 3rem;
+        height: 100vh;
+        background-position: center; 
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .inside-main form{
+        max-width: 600px;
+        width: 90%;
+    }
+
+    .inside-main .input-group{
+        margin-bottom: 20px;
+        margin-right: 15rem;
+        position: relative;
+    }
+
+    .contact input, textarea{
+        width: 100%;
+        padding: 11px;
+        outline: 0;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        font-size: 16px;
+    }
+
+    label{
+        height: 100%;
+        position: absolute;
+        left: 0;
+        padding: 13px;
+        color: #fff;
+        cursor: text;
+        transition: 0.5s;
+    }
+
+    button{
+        padding: 10px 0;
+        margin-right: 17.65rem;
+        color: #fff;
+        outline: none;
+        background: transparent;
+        border: 1px solid #fff;
+        width: 390px;
+        cursor: pointer;
+    } 
+
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label{
+        top: -35px;
+        font-size: 14px;
+    }
+
+    .contact h1{
+        margin-right: 4rem;
+        margin-bottom: 37rem;
+    }
+  
+  #footer {
+    margin-top: 0.5rem;
+    background-color: rgba(196, 183, 183, 0.733);
+    padding-top: 1rem;
+    margin-left: 2rem;
+  }
+  
+  #footer .row{
+    justify-content: space-between;
+    width: 75%;
+  }
+
+  #footer h4 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 0.5rem;
+  }
+  
+  #footer a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.3rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer a:hover {
+    color: grey;
+  }
+  
+  #footer a span {
+    margin-left: 0.5rem;
+  }
+  
+  #footer li {
+    list-style: none;
+  }
+  
+  #footer .fa-square {
+    font-size: 8px;
+  }
+  
+  .footer-close {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  
+  .footer-close span {
+    color: blue;
+  }
+  
+  /* Media queries--------responsivness----------- */
+  @media screen and (min-width: 992px) {
+    .icon {
+      margin-right: 70px;
+    }
+  
+    .nav-menu {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .sidebar {
+      display: none;
+    }
+  
+    #main {
+      width: 100vw;
+
+    }
+  
+    .title {
+      font-size: 17px;
+    }
+  
+    .main-desc {
+      font-size: 13px !important;
+    }
+  
+    .main-buttons {
+      margin-top: -20px;
+    }
+  
+    #our-staff .row {
+      display: block;
+    }
+  
+    .fr-3 {
+      width: 100%;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .fr-4 {
+      width: 50%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .nav-icons,
+    .nav-right {
+      display: none;
+    }
+  
+    .bar-icon {
+      margin-right: 1rem;
+      float: right;
+      display: block;
+    }
+  
+    #navbar.responsive {
+      position: relative;
+    }
+  
+    #navbar.responsive .bar-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .nav-menu {
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+  
+    .nav-menu a {
+      font-size: 10px;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      font-weight: normal;
+      margin-top: 1rem;
+      align-items: center;
+    }
+  
+    .nav-menu a h3 {
+      margin-left: 0.3rem;
+    }
+  
+    .d-none {
+      display: none !important;
+    }
+  }
+  
