@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complain Page</title>
-    <link rel="stylesheet" href="../css/lodgecomplain.css">
+    <link rel="stylesheet" href="/Users_css/lodgecomplain.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <img src="../images/logo.jpg" alt="Logo">
+                <img src="/images/logo.jpg" alt="Logo">
                 <div class="title">
                     <span class="brand-1">HARMO</span>
                     <span class="brand-2">NIZERS</span>
@@ -40,7 +40,7 @@
                         <i class="fas fa-search"></i>
                     </span>
                 </div>
-                <img src="../images/profile.jpg" alt="Profile">
+                <img src="/images/profile.jpg" alt="Profile">
             </div>
             <a href="javascript:void(0);" class="bar-icon" onclick="showNavMenu()">
                 <i class="fas fa-bars"></i>
@@ -57,7 +57,7 @@
                 <span> <i class="uil uil-apps"></i></span>
                 <h3>Dashboard</h3>
             </a>
-            <a href="home.php">
+            <a href="/">
                 <span> <i class="fas fa-home"></i></span>
                 <h3>Home</h3>
             </a>
@@ -73,19 +73,11 @@
                 <span> <i class="uil uil-key-skeleton-alt"></i></span>
                 <h3>Change-password</h3>
             </a>
-            <a href="contact.php">
-                <span> <i class="fas fa-phone-alt"></i></span>
-                <h3>Contact</h3>
-            </a>
-            <a href="#">
-                <span> <i class="fas fa-info-circle"></i></span>
-                <h3>About</h3>
-            </a>
-            <a href="signup.php" class="active">
+            <a href="/signup.php" class="active">
                 <span> <i class="uil uil-user"></i></span>
                 <h3>Register</h3>
             </a>
-            <a href="login.php">
+            <a href="/login.php">
                 <span> <i class="uil uil-sign-out-alt"></i></span>
                 <h3>Logout</h3>
             </a>
@@ -107,7 +99,7 @@
                     <span> <i class="fab fa-dashcube"></i></span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="home.php">
+                <a href="/">
                     <span> <i class="fas fa-home"></i></span>
                     <h3>Home</h3>
                 </a>
@@ -123,19 +115,11 @@
                     <span> <i class="fas fa-lock"></i></span>
                     <h3>Change-password</h3>
                 </a>
-                <a href="contact.php">
-                    <span> <i class="fas fa-phone-alt"></i></span>
-                    <h3>Contact</h3>
-                </a>
-                <a href="#">
-                    <span> <i class="fas fa-info-circle"></i></span>
-                    <h3>About</h3>
-                </a>
-                <a href="signup.php" class="active">
+                <a href="/signup.php" class="active">
                     <span> <i class="fas fa-sign-in-alt"></i></span>
                     <h3>Register</h3>
                 </a>
-                <a href="login.php">
+                <a href="/login.php">
                     <span> <i class="fas fa-sign-out-alt"></i></span>
                     <h3>Logout</h3>
                 </a>
@@ -146,36 +130,29 @@
         <!-- Start of main section -->
         <div class="box">
             <div class="inner-box">
-                <form action="">
-                    <h2>Users Personal Info</h2>
+                <form action="/Backend/complain.backend.php" method="POST">
+                    <h2>Users Personal Info</h2>   
                     <div class="input-field">
-                        <input type="text" placeholder="First Name" required/>
-                        <input type="address" placeholder="Address" required/>
-                    </div>
+                        <input type="text" name="region" placeholder="State" required>
+                        <input type="number" name="phone_num" placeholder="Phone num" required>
+                    </div> 
                     <div class="input-field">
-                        <input type="text" placeholder="State" required/>
-                        <input type="phonenumber" placeholder="Phone num" required/>
+                        <input type="text" name="gender" placeholder="Gender" required>
                     </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Username" required/>
-                        <input type="email" placeholder="Email" required/>
+                    <input type="text" name="category" placeholder="Complaint-Category" required>
+
+                    <div class="input-title">
+                        <input type="text" name="title" placeholder="Complaint Title" required>
                     </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Gender" required/>
-                        <input type="date" placeholder="Date" required/>
+                    <div class="input-comment">
+                        <textarea id="massage" name="massage" type="text" rows="8" placeholder="Enter Your Complain...."  required></textarea>
                     </div>
-                    <input type="submit" value="Complaint-Category" required/>
+                    <div class="submit-complain">
+                        <input type="submit"  value="Lodge Complaint">
+                    </div>
                 </form>
             </div>
-            <div class="input-title">
-                <input type="text" placeholder="Complaint Title" required/>
-            </div>
-            <div class="input-comment">
-                <textarea id="massage" rows="8" placeholder="Enter Your Complain...."  required></textarea>
-            </div>
-            <div class="submit-complain">
-                <input type="text" placeholder="Lodge Complaint" required/>
-            </div>
+            
         </div>
         <!-- End of main section -->
         <!-- Start of footer -->
@@ -287,8 +264,8 @@
     </div>
 
 
-    <script src="../js/all.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="/js/all.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 
 </html>

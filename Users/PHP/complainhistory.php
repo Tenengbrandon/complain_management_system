@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History Page</title>
-    <link rel="stylesheet" href="../css/complainhistory.css">
+    <link rel="stylesheet" href="/Users_css/complainhistory.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <img src="../images/logo.jpg" alt="Logo">
+                <img src="/images/logo.jpg" alt="Logo">
                 <div class="title">
                     <span class="brand-1">HARMO</span>
                     <span class="brand-2">NIZERS</span>
@@ -40,7 +40,7 @@
                         <i class="fas fa-search"></i>
                     </span>
                 </div>
-                <img src="../images/profile.jpg" alt="Profile">
+                <img src="/images/profile.jpg" alt="Profile">
             </div>
             <a href="javascript:void(0);" class="bar-icon" onclick="showNavMenu()">
                 <i class="fas fa-bars"></i>
@@ -57,7 +57,7 @@
                 <span> <i class="uil uil-apps"></i></span>
                 <h3>Dashboard</h3>
             </a>
-            <a href="home.php">
+            <a href="/">
                 <span> <i class="fas fa-home"></i></span>
                 <h3>Home</h3>
             </a>
@@ -73,19 +73,11 @@
                 <span> <i class="uil uil-key-skeleton-alt"></i></span>
                 <h3>Change-password</h3>
             </a>
-            <a href="contact.php">
-                <span> <i class="fas fa-phone-alt"></i></span>
-                <h3>Contact</h3>
-            </a>
-            <a href="about.php">
-                <span> <i class="fas fa-info-circle"></i></span>
-                <h3>About</h3>
-            </a>
-            <a href="signup.php" class="active">
+            <a href="/signup.php" class="active">
                 <span> <i class="uil uil-user"></i></span>
                 <h3>Register</h3>
             </a>
-            <a href="login.php">
+            <a href="/login.php">
                 <span> <i class="uil uil-sign-out-alt"></i></span>
                 <h3>Logout</h3>
             </a>
@@ -107,7 +99,7 @@
                     <span> <i class="fab fa-dashcube"></i></span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="home.php">
+                <a href="/">
                     <span> <i class="fas fa-home"></i></span>
                     <h3>Home</h3>
                 </a>
@@ -123,19 +115,11 @@
                     <span> <i class="fas fa-lock"></i></span>
                     <h3>Change-password</h3>
                 </a>
-                <a href="contact.php">
-                    <span> <i class="fas fa-phone-alt"></i></span>
-                    <h3>Contact</h3>
-                </a>
-                <a href="#">
-                    <span> <i class="fas fa-info-circle"></i></span>
-                    <h3>About</h3>
-                </a>
-                <a href="signup.php" class="active">
+                <a href="/signup.php" class="active">
                     <span> <i class="fas fa-sign-in-alt"></i></span>
                     <h3>Register</h3>
                 </a>
-                <a href="login.php">
+                <a href="/login.php">
                     <span> <i class="fas fa-sign-out-alt"></i></span>
                     <h3>Logout</h3>
                 </a>
@@ -291,8 +275,8 @@
     </div>
 
 
-    <script src="../js/all.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="/js/all.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 
 </html>

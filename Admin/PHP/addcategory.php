@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
-    <link rel="stylesheet" href="../css/addcategory.css">
+    <link rel="stylesheet" href="/Admin_css/addcategory.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <img src="../images/logo.jpg" alt="Logo">
+                <img src="/images/logo.jpg" alt="Logo">
                 <div class="title">
                     <span class="brand-1">HARMO</span>
                     <span class="brand-2">NIZERS</span>
@@ -40,7 +40,7 @@
                         <i class="fas fa-search"></i>
                     </span>
                 </div>
-                <img src="../images/profile.jpg" alt="Profile">
+                <img src="/images/profile.jpg" alt="Profile">
             </div>
             <a href="javascript:void(0);" class="bar-icon" onclick="showNavMenu()">
                 <i class="fas fa-bars"></i>
@@ -69,7 +69,7 @@
                 <span> <i class="fas fa-lock"></i></span>
                 <h3>Change-password</h3>
             </a>
-            <a href="login.php">
+            <a href="/login.php">
                 <span> <i class="fas fa-sign-out-alt"></i></span>
                 <h3>Logout</h3>
             </a>
@@ -103,7 +103,7 @@
                     <span> <i class="fas fa-lock"></i></span>
                     <h3>Change-password</h3>
                 </a>
-                <a href="login.php">
+                <a href="/login.php">
                     <span> <i class="fas fa-sign-out-alt"></i></span>
                     <h3>Logout</h3>
                 </a>
@@ -277,8 +277,8 @@
     </div>
 
 
-    <script src="../js/all.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="/js/all.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 
 </html>

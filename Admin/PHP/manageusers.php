@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
-    <link rel="stylesheet" href="../css/manageusers.css">
+    <link rel="stylesheet" href="/Admin_css/manageusers.css">
 </head>
 
 <body>
@@ -69,7 +69,7 @@
                 <span> <i class="fas fa-lock"></i></span>
                 <h3>Change-password</h3>
             </a>
-            <a href="login.php">
+            <a href="/login.php">
                 <span> <i class="fas fa-sign-out-alt"></i></span>
                 <h3>Logout</h3>
             </a>
@@ -103,7 +103,7 @@
                     <span> <i class="fas fa-lock"></i></span>
                     <h3>Change-password</h3>
                 </a>
-                <a href="login.php">
+                <a href="/login.php">
                     <span> <i class="fas fa-sign-out-alt"></i></span>
                     <h3>Logout</h3>
                 </a>
@@ -122,7 +122,7 @@
                             <h2>Total Reg Users</h2>
                             <thead class="table table-hover">
                                 <tr>
-                                    <th>ID</th>
+                                    <th>SN</th>
                                     <th>Username</th>
                                     <th>Phone Num.</th>
                                     <th>Email</th>
@@ -261,8 +261,8 @@
     </div>
 
 
-    <script src="../js/all.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="/js/all.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 
 </html>

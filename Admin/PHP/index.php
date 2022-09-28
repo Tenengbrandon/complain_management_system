@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/Admin_css/style.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <img src="../images/logo.jpg" alt="Logo">
+                <img src="/images/logo.jpg" alt="Logo">
                 <div class="title">
                     <span class="brand-1">HARMO</span>
                     <span class="brand-2">NIZERS</span>
@@ -40,7 +40,7 @@
                         <i class="fas fa-search"></i>
                     </span>
                 </div>
-                <img src="../images/profile.jpg" alt="Profile">
+                <img src="/images/profile.jpg" alt="Profile">
             </div>
             <a href="javascript:void(0);" class="bar-icon" onclick="showNavMenu()">
                 <i class="fas fa-bars"></i>
@@ -54,11 +54,11 @@
                 <h3>Dashboard</h3>
             </a>
             <a href="managecomplain.php">     <!--------dropdown menu----->
-                    <span> <i class="fas fa-clock"></i></span>
-                    <h3>Manage-Complaint</h3>
-                </a>
-            <a href="manageusers.php">
-                <span> <i class="fas fa-users"></i></span>
+                <span> <i class="fas fa-clock"></i></span>
+                <h3>Manage-Complaint</h3>
+            </a>
+            <a href="manageusers.php" >
+                <span><i class="fas fa-users"></i></span>
                 <h3>Manage-Users</h3>
             </a>
             <a href="addcategory.php">
@@ -69,13 +69,13 @@
                 <span> <i class="fas fa-lock"></i></span>
                 <h3>Change-password</h3>
             </a>
-            <a href="login.php">
+            <a href="/login.php">
                 <span> <i class="fas fa-sign-out-alt"></i></span>
                 <h3>Logout</h3>
             </a>
         </div>
         <!-- End of menu -->
-    </nav>
+    </nav> 
 
     <!-- End of navbar -->
 
@@ -87,12 +87,19 @@
                     <span> <i class="fab fa-dasboard"></i></span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="managecomplain.php">     <!--------dropdown menu----->
-                    <span> <i class="fas fa-clock"></i></span>
-                    <h3 class="dropbtn">Manage-Complaint</h3>
-                </a>
-                <a href="manageusers.php">
-                    <span> <i class="fas fa-users"></i></span>
+                <div class="dropdown">
+                         <!--------dropdown menu----->
+                        <span> <i class="fas fa-clock"></i></span>
+                        <button class="click"><h3>Manage-Complaint</h3></button>
+                        <div class="list">
+                            <button class="links"> <a href="complaintsreplied.php">Complaints Replied</a></button>
+                            <button class="links"> <a href="complaintspending.php">Complaints Pending</a></button>
+                        </div>
+                    
+                </div>
+                
+                <a href="manageusers.php" >
+                    <span><i class="fas fa-users"></i></span>
                     <h3>Manage-Users</h3>
                 </a>
                 <a href="addcategory.php">
@@ -103,7 +110,7 @@
                     <span> <i class="fas fa-lock"></i></span>
                     <h3>Change-password</h3>
                 </a>
-                <a href="login.php">
+                <a href="/login.php">
                     <span> <i class="fas fa-sign-out-alt"></i></span>
                     <h3>Logout</h3>
                 </a>
@@ -121,7 +128,7 @@
                         <h1 class="title">Welcome! Admin Panel.</h1>
                         <p class="main-desc">
                            <strong>Admin</strong> 
-                           <img src="../images/profile2.png" alt="Profile">
+                           <img src="/images/profile2.png" alt="Profile">
                         </p>
                         <div class="main-buttons">
                             <a href="logout.php" class="btn btn-outline-black ms-1">Logout</a>
@@ -291,8 +298,15 @@
     </div>
 
 
-    <script src="../js/all.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="/js/all.js"></script>
+    <script src="/js/home.js"></script>
+    <script>
+        let click = document.querySelector('.click');
+        let list = document.querySelector('.list');
+        click.addEventListener("click", ()=>{
+            list.classList.toggle('newlist');
+        })
+    </script>
 </body>
 
 </html>

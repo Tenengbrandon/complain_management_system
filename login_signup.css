@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+/* begins of admin_page */
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 60px;
+    background-color: #3c5077;
+}
+
+.container .content{
+    text-align: center;
+}
+
+.container .content h3{
+    font-size: 30px;
+    color: #333;
+}
+
+.container .content h3 span{
+    background: blue;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0px 15px;
+}
+
+.container .content h1{
+    font-size: 50px;
+    color: #333;
+}
+
+.container .content h1 span{
+    color: crimson;
+}
+
+.container .content p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container .content .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #333;
+    color: white;
+    margin: 0 5px;
+}
+
+.container .content .btn:hover{
+    background-color: crimson;
+}
+
+
+/* login form begins */
+.form_container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 60px;
+    background-color: #3c5077;
+}
+
+.form_container form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    width: 500px;
+}
+
+.form_container form h3{
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form_container form input,
+.form_container form select{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+    margin: 8px 0;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.form_container form select option{
+    background-color: #fff;
+}
+
+.form_container .form-btn{
+    background-color: #fbd0d9;
+    color: crimson;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.form_container .form-btn:hover{
+    background-color: crimson;
+    color: #fff;
+}
+
+.form_container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.form_container form p a{
+    color: crimson;
+}
+
+/* popup massage */
+.popup{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: -23%;
+    left: 35%;
+    transition: translate(-50%, -50%);
+    transform: scale(0.1);
+    text-align: center;
+    padding: 0px 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 30%;
+    transition: translate(-50%, -50%);
+    transform: scale(1);
+
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    font-size: 18px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+/* end of popup massage */

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href ="../css/home.css">
+    <link rel="stylesheet" href ="home.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <img src="../images/logo.jpg" alt="Logo">
+                <img src="\images\logo.jpg" alt="Logo">
                 <div class="title">
                     <span class="brand-1">HARMO</span>
                     <span class="brand-2">NIZERS</span>
@@ -40,7 +40,7 @@
                         <i class="fas fa-search"></i>
                     </span>
                 </div>
-                <img src="../images/profile.jpg" alt="Profile">
+                <img src="/images/profile.jpg" alt="Profile">
             </div>
             <a href="javascript:void(0);" class="bar-icon" onclick="showNavMenu()">
                 <i class="fas fa-bars"></i>
@@ -49,37 +49,29 @@
 
         <!-- This is the menu that is displayed on smaller screens -->
         <div class="nav-menu d-none" id="nav-menu">
-            <a href="profile.php">
+            <a href="/Users/PHP/profile.php">
                 <span> <i class="fas fa-user-circle"></i></span>
                 <h3>Profile</h3>
             </a>
-            <a href="index.php">
+            <a href="/Users/PHP/index.php">
                 <span> <i class="uil uil-apps"></i></span>
                 <h3>Dashboard</h3>
             </a>
-            <a href="home.php">
+            <a href="/">
                 <span> <i class="fas fa-home"></i></span>
                 <h3>Home</h3>
             </a>
-            <a href="lodgecomplain.php">
+            <a href="/Users/PHP/lodgecomplain.php">
                 <span> <i class="fas fa-clock"></i></span>
                 <h3>Lodge-Complain</h3>
             </a>
-            <a href="complainhistory.php">
+            <a href="/Users/PHP/complainhistory.php">
                 <span> <i class="uil uil-history"></i></span>
                 <h3>Complain-history</h3>
             </a>
             <a href="changepassword.php">
                 <span> <i class="uil uil-key-skeleton-alt"></i></span>
                 <h3>Change-password</h3>
-            </a>
-            <a href="contact.php">
-                <span> <i class="fas fa-phone-alt"></i></span>
-                <h3>Contact</h3>
-            </a>
-            <a href="#">
-                <span> <i class="fas fa-info-circle"></i></span>
-                <h3>About</h3>
             </a>
             <a href="signup.php" class="active">
                 <span> <i class="uil uil-user"></i></span>
@@ -99,37 +91,29 @@
         <!-- Start of sidebar -->
         <aside class="sidebar">
             <div class="container">
-                <a href="profile.php">
+                <a href="/Users/PHP/profile.php">
                     <span> <i class="fas fa-user-circle"></i></span>
                     <h3>Profile</h3>
                 </a>
-                <a href="index.php">
+                <a href="/Users/PHP/index.php">
                     <span> <i class="fab fa-dashcube"></i></span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="home.php">
+                <a href="/">
                     <span> <i class="fas fa-home"></i></span>
                     <h3>Home</h3>
                 </a>
-                <a href="lodgecomplain.php">
+                <a href="/Users/PHP/lodgecomplain.php">
                     <span> <i class="fas fa-clock"></i></span>
                     <h3>Lodge-Complain</h3>
                 </a>
-                <a href="complainhistory.php">
+                <a href="/Users/PHP/complainhistory.php">
                     <span> <i class="fas fa-clock"></i></span>
                     <h3>Complain-history</h3>
                 </a>
                 <a href="changepassword.php">
                     <span> <i class="fas fa-lock"></i></span>
                     <h3>Change-password</h3>
-                </a>
-                <a href="contact.php">
-                    <span> <i class="fas fa-phone-alt"></i></span>
-                    <h3>Contact</h3>
-                </a>
-                <a href="#">
-                    <span> <i class="fas fa-info-circle"></i></span>
-                    <h3>About</h3>
                 </a>
                 <a href="signup.php" class="active">
                     <span> <i class="fas fa-sign-in-alt"></i></span>
@@ -212,7 +196,7 @@
                             </div>
 
                             <div class="fr-4">
-                                <h4>Get Help</h4>
+                                <h4>Get Help</h4> 
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -295,8 +279,8 @@
     </div>
 
 
-    <script src="../js/all.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="/js/all.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 
 </html>

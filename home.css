@@ -7,7 +7,7 @@
     border: 0;
     box-sizing: border-box;
   }
-
+  
   body {
     width: 100vw;
     height: 100vh;
@@ -142,14 +142,13 @@
     background: white;
     display: flex;
     align-items: center;
-    line-height: 40px;
     position: fixed;
     box-shadow: inset -1px -1px rgba(235, 224, 224, 0.5);
   }
   
   #main {
     width: 100%;
-    margin-left: 19rem;
+    margin-left: 22rem;
   }
   
   .sidebar a {
@@ -173,155 +172,72 @@
     position: absolute;
     bottom: 2rem;
     width: 100%;
-  }
+}
   
   .small-main {
-    height: 350px;
+    background-color: #737fec5b;
+    height: 300px;
     padding-top: 120px;
-    background-image: url(../images/complain.jfif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100%;
+    margin-right: 4rem;
   }
   
-  .small-main .title {
-    font-size: 35px;
-    margin-bottom: 2rem;
-    color: #fff;
+  .small-main .title{
+    margin-top: 1.5em;
+    margin-left: 4rem;
   }
   
-  .small-main .main-desc {
-    font-size: 20px;
+  .small-main h2{
+    margin-left: 25rem;
+    margin-top: 8rem;
+  }
+
+  .small-main .row{
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
-    color: #fff;
-  }
-
-  .small-main .main-desc strong{
-    margin-top: 1.5rem;
-    margin-right: 1rem;
-  }
-
-  .small-main .container img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-  }
-  
-  .small-main strong {
-    color: #fff;
-  }
-  
-  .btn {
-    outline: 0;
-    border: 0;
-    padding: 10px;
-    margin: 0;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    border-radius: 5px;
-  }
-  
-  .btn-outline-black {
-    border: 1px solid black;
-    color: #fff;
-    padding: 9px;
-    width: 100px;
-    margin-top: 1rem;
-    margin-left: 2rem;
-  }
-  
-  .btn-outline-black:hover {
-    background-color: red;
-    color: white;
-  }
-  
-  .ms-1 {
-    margin-left: 0.5rem;
-  }
-  
-  #our-staff {
-    margin-top: 2rem;
-  }
-
-  #our-staff .row{
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0px 5px;
+    margin-left: 1rem;
+    margin-top: 4rem;
     justify-content: space-between;
+    height: 250px;
   }
 
-  #our-staff .dashboard, .dashboard-green, .dashboard-red, .dashboard-purple{
-    width: 22%;
-    height: 130px;
-    display: inline-block;
-    color: #fff;
-    margin-top: 30px;
-    border-radius: 5px; 
-    transition: all 200ms ease;
+  .row .card-text{
+    box-sizing: border-box;
+    box-shadow: rgba(231, 218, 218, 0.897);
+    border-radius: 5px;
+    width: 28%;
+    justify-content: center;
+    background: rgb(242, 238, 238);
+    box-shadow: inset -5px -5px rgb(243, 238, 238);
   }
 
-  #our-staff .dashboard{
-    background-color: blue;
-  }
-
-  #our-staff .dashboard-green{
-    background-color: green;
-  }
-
-  #our-staff .dashboard-red{
-    background-color: red;
-  }
-
-  #our-staff .dashboard-purple{
-    background-color: purple;
-  }
-
-  .dashboard:hover, .dashboard-green:hover, .dashboard-red:hover, .dashboard-purple:hover{
-      transform: translateY(7px);
-  }
-
-  .icon-section{
+  .row .text h3{
     margin-top: 1rem;
+    font-size: 20px;
+    text-align: center;
   }
 
-  .icon-section i{
-      font-size: 30px;
-      padding: 10px;
-      border: 1px solid #fff;
-      border-radius: 50%;
-      margin-top: -25px;
-      margin-bottom: 10px;
-      background-color: #34495E;
+  .row .text p{
+    padding: 2rem;
+    font: 18px;
+    word-spacing: 0.2rem;
   }
-
-  .icon-section p{
-    margin-top: 0.5rem;
-  }
-
-  .icon-section p, small, .fas fa-user{
-    font-size: 25px;
-    padding-bottom: 10px;
-  }
-
   
   #footer {
-    margin-top: 2rem;
+    margin-top: 30rem;
     background-color: rgba(196, 183, 183, 0.733);
     padding-top: 1rem;
+    margin-left: 0.1rem;
+  }
+
+  #footer .row{
+    justify-content: space-between;
   }
   
   #footer h4 {
     color: white;
     font-size: 17px;
     margin-bottom: 0.5rem;
-  }
-
-  #footer .row{
-    justify-content: space-between;
   }
   
   #footer a {
@@ -457,4 +373,34 @@
       display: none !important;
     }
   }
+/* 
+  @media screen and (min-width: 450px){
+    *{
+      width: 80vw;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar{
+      width: 100%;
+    }
+
+    .bar-icon {
+      margin-right: 1rem;
+      float: right;
+      display: block;
+    }
+  
+    #navbar.responsive {
+      position: relative;
+    }
+  
+    #navbar.responsive .bar-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  } */
   
